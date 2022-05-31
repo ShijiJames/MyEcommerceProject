@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="testCases.ManageOrdersTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyAdditionOnViewTable"/>
+        </methods>
+      </class> <!-- testCases.ManageOrdersTestCases -->
+      <class name="testCases.ListsProductTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="isNonVegRadiobtnClicked"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.ListsProductTestCases -->
+      <class name="testCases.CategoryTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifySelectedItemMovesOnClick"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.CategoryTestCases -->
+      <class name="testCases.HomePageTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyLoginUserNameTC"/>
+          <include name="verifySessionLogout"/>
+        </methods>
+      </class> <!-- testCases.HomePageTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
